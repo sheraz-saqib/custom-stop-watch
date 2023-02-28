@@ -27,7 +27,7 @@ settingContainer  = document.querySelector('.setting'),
 resetSatting = document.querySelector('#resetSatting');
 
 let [hr,mint,sec,milli] = [0,0,0,0];
-let init = null
+let init = null;
 
 startBtn.addEventListener('click', startBtnAddclass);
 puseBtn.addEventListener('click',stopCounter);
@@ -44,7 +44,6 @@ function resetCounter() {
     [hr,mint,sec,milli] = [0,0,0,0];
     timerInput.innerHTML= '00 : 00 : 00 : 000';
     clearInterval(init);
-    confirm('confirm to reset time')
 };
 
 
@@ -134,15 +133,17 @@ resetSatting.addEventListener('click',()=>{
     button3.style.backgroundColor = '#121212';
     settingContainer.style.backgroundColor = '#1b1b1b';
     // reset input color
-    bodyColor.value = ''
-    watchColor.value = ''
-    textcolor.value = ''
-    primaryColor.value = ''
-    buttonColor.value = ''
+    // bodyColor.value = ''
+    // watchColor.value = ''
+    // textcolor.value = ''
+    // primaryColor.value = ''
+    // buttonColor.value = ''
+
+    bodyColor.value = '#121212'
+    watchColor.value = '#1b1b1b'
+    textcolor.value = '#acacac'
+    primaryColor.value = '#1b1b1b'
+    buttonColor.value = '#1b1b1b'
 })
 
-bodyColor.value = '#121212'
-watchColor.value = '#1b1b1b'
-textcolor.value = '#acacac'
-primaryColor.value = '#1b1b1b'
-buttonColor.value = '#1b1b1b'
+
